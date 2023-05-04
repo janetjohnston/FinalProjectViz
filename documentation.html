@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<title> Documentation Page </title>
+		<style>
+			figcaption {
+			font-style: italic;
+			}
+		</style>
+	</head>
+	<body>
+		<H2> Project Documentation </H2>
+		<H3> Design Process </H3>
+			<p> As an avid reader and self proclaimed book enthusiast, I wanted to 
+				do the final project with a data set relating to books in some way. <br/>
+				After a few searches I found the Goodreads-books data set on Kaggle. This
+				data set is a comprehensive list of all the books on the <br/> Goodreads app, 
+				along with the books' respective author(s), average rating, isbn, number of 
+				pages, number of ratings, and number of <br> text ratings. After viewing the
+				data set the question I decided to pose as my research question is: What 
+				books have the most ratings <br/> and how do the average ratings compare 
+				between the books with the most ratings? 
+				<br/>
+				<br/>
+				My first design to answer this question was a bar plot with the title 
+				of the book on the x-axis and the average rating on the y-axis. <br/> Then, 
+				when you hover over the individual bars a tooltip will display the 
+				exact average rating for that specific book. The overall <br/> design stayed
+				the same throughout the process of creating the visualization. However, 
+				I learned that I needed to be much more <br/> specific in my design. On my 
+				first attempt, I filtered the data by books who have greater than 100,000
+				reviews. This lead to a very <br/> messy graph with way too many bars for
+				it to be easily understandable. 
+				</br/>
+			</p>
+			<figure>
+				<img src="toomanybars.png" width = "800" height = "400">
+				 <figcaption> Fig 1: Books with more than 100,000 ratings </figcaption>
+			</figure>
+			<p>
+				After texting out a few different values for the minimum number of ratings
+				I decided on 1,500,000 as this resulted in 18 books/bars <br/> to be displayed.
+				Now that the graph is legible, I realized that it would be nice if the 
+				number of ratings was also displayed in the tool <br/> tip to provide more
+				information to the viewer.
+			</p>
+			<figure>
+				<img src="tooltip.png" width = "800" height = "400">
+				 <figcaption> Fig 2: Most reviewed books with tooltip </figcaption>
+			</figure>
+			<p>
+				At this point the visualization was clear and demonstrated my purpose, 
+				but it was still lacking interest and visual appeal. To remedy <br/> this 
+				some color was added to the bars. 
+			</p>
+			<figure>
+				<img src="color.png" width = "800" height = "400">
+				 <figcaption> Fig 3: Adding color for visual appeal </figcaption>
+			</figure>
+			<p>
+				Lastly, to emphasize what bar the user is hovering over, I added a 
+				highlight feature to change the color of the bar when the curser <br/> 
+				hovers over it. 
+			</p>
+			<figure>
+				<img src="highlight.png" width = "800" height = "400">
+				 <figcaption> Fig 4: Adding highlight for distinction </figcaption>
+			</figure>
+			
+		<H3> Rationale of Design Choices </H3>
+			<p>
+				I chose to use a bar graph for this visualization as they are one of the 
+				most efficient channels for encoding both a quantitative <br/> and a 
+				quantitative variable. For example, imagine if instead of a bar, a line 
+				was used. The viewer would still be able to discern <br/> which books had
+				higher or lower average ratings based on the vertices of the line, but it 
+				would be confusing why the separate <br/> books would be connected. This 
+				is why using a bar graph in this situation is the best choice. 
+				<br/>
+				<br/>
+				Color was added to each of the bars to make the graph more 
+				visually interesting. The purpose of this is to grab the attention <br/> or 
+				curiosity of the view more than a black and white image would. 
+				<br/>
+				<br/>
+				Lastly, an additional color or highlight element was added when hovering
+				over a particular bar to make it more clear what <br/> bar/book you were 
+				on when the tooltip information is displayed.
+				
+			</p>
+			
+		<H3> What I Discovered </H3> 
+			<p>
+				This visualization answers both parts of my research question. The first
+				part, what books have the most ratings, is answered <br/> by the books that 
+				appear. That is, the books that are displayed along the x-axis are the 
+				18 most rated books on the Goodreads <br/> app. Utilizing the tooltip
+				feature of the visualization allows the viewer to learn the number of 
+				ratings each book has. For <br/> example, when hovering over 
+				<i>Twilight</i> the viewer learns that is has an average rating of 3.59 
+				out of 4,597,666 ratings. Making <br/> <i>Twilight</i> the most rated book
+				on Goodreads. 
+			</p>
+			<figure>
+				<img src="mostreviewed.png" width = "900" height = "400">
+				 <figcaption> Fig 5: Twilight has the most ratings </figcaption>
+			</figure>
+			<p>
+				The second part of my research question, how do the average ratings compare 
+				between the books with the most ratings, is answered <br/> by viewing the 
+				graph. Visually, it is seen that the average rating of all the books is 
+				relatively high and there is not a whole lot of <br/> variation between
+				all of average ratings as they all range from about 3.5-4.5. Ultimately, 
+				all of the most rated books on Goodreads <br/> have above average ratings.
+			</p>
+		<H3> Video Description </H3> 
+		<iframe width="500" height="315"
+		src="https://www.youtube.com/embed/lgvErkyIsEY">
+		</iframe>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
